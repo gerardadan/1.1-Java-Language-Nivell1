@@ -4,14 +4,15 @@
 public class Main {
     public static void main(String[] args) {
 
-        Vent.staticTocar();
-        Vent vent = new Vent("flauta", 25);
-        vent.tocar();
+        System.out.println(WindInstrument.staticTocar());
+        WindInstrument windInstrument = new WindInstrument("flauta", 25);
+        System.out.println(windInstrument.tocar());
 
-        Percussio percussio = new Percussio("timbal", 40);
-        percussio.tocar();
+        PercussionInstrument percussio = new PercussionInstrument("timbal", 40);
+        System.out.println(percussio.tocar());
 
-        Corda corda = new Corda("guitarra", 80);
-        corda.tocar();
+        StringInstrument corda = new StringInstrument("guitarra", 80);
+        System.out.println(corda.tocar());
+
     }
 }
